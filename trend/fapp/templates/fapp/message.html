@@ -1,0 +1,325 @@
+{% extends "fapp/layout.html" %}
+{% block content  %}
+
+<form name="frmSearch" method="GET" action="loginProces">
+  <!-- 1. 분류제목 -->
+  <div class="row p-1">
+    <div class="col-sm-12 text-center">
+      <h2 for="f_title">트렌드분석기 </h2>
+    </div>
+  </div>
+  <!--2. 분류제목 -->
+  <div class="row p-1">
+    <div class="col-sm-2 text-right"></div>
+    <div class="col-sm-2 text-right">
+      <div class="form-group text-right">
+        <select class="form-control" id="selClass" name="selClass" style="width: 150px;">
+          <option value="#">시작 달</option>
+          <option value="2016-01-01">2016-01-01</option>
+          <option value="2016-02-01">2016-02-01</option>
+          <option value="2016-03-01">2016-03-01</option>
+          <option value="2016-04-01">2016-04-01</option>
+          <option value="2016-05-01">2016-05-01</option>
+          <option value="2016-06-01">2016-06-01</option>
+          <option value="2016-07-01">2016-07-01</option>
+          <option value="2016-08-01">2016-08-01</option>
+          <option value="2016-09-01">2016-09-01</option>
+          <option value="2016-10-01">2016-10-01</option>
+          <option value="2016-11-01">2016-11-01</option>
+          <option value="2016-12-01">2016-12-01</option>
+          <option value="2017-01-01">2017-01-01</option>
+          <option value="2017-02-01">2017-02-01</option>
+          <option value="2017-03-01">2017-03-01</option>
+          <option value="2017-04-01">2017-04-01</option>
+          <option value="2017-05-01">2017-05-01</option>
+          <option value="2017-06-01">2017-06-01</option>
+          <option value="2017-07-01">2017-07-01</option>
+          <option value="2017-08-01">2017-08-01</option>
+          <option value="2017-09-01">2017-09-01</option>
+          <option value="2017-10-01">2017-10-01</option>
+          <option value="2017-11-01">2017-11-01</option>
+          <option value="2017-12-01">2017-12-01</option>
+          <option value="2018-01-01">2018-01-01</option>
+          <option value="2018-02-01">2018-02-01</option>
+          <option value="2018-03-01">2018-03-01</option>
+          <option value="2018-04-01">2018-04-01</option>
+          <option value="2018-05-01">2018-05-01</option>
+          <option value="2018-06-01">2018-06-01</option>
+          <option value="2018-07-01">2018-07-01</option>
+          <option value="2018-08-01">2018-08-01</option>
+          <option value="2018-09-01">2018-09-01</option>
+          <option value="2018-10-01">2018-10-01</option>
+          <option value="2018-11-01">2018-11-01</option>
+          <option value="2018-12-01">2018-12-01</option>
+          <option value="2019-01-01">2019-01-01</option>
+          <option value="2019-02-01">2019-02-01</option>
+          <option value="2019-03-01">2019-03-01</option>
+          <option value="2019-04-01">2019-04-01</option>
+          <option value="2019-05-01">2019-05-01</option>
+          <option value="2019-06-01">2019-06-01</option>
+          <option value="2019-07-01">2019-07-01</option>
+          <option value="2019-08-01">2019-08-01</option>
+          <option value="2019-09-01">2019-09-01</option>
+          <option value="2019-10-01">2019-10-01</option>
+          <option value="2019-11-01">2019-11-01</option>
+          <option value="2019-12-01">2019-12-01</option>
+          <option value="2020-01-01">2020-01-01</option>
+          <option value="2020-02-01">2020-02-01</option>
+          <option value="2020-03-01">2020-03-01</option>
+          <option value="2020-04-01">2020-04-01</option>
+          
+
+        </select>
+        <select class="form-control" id="selClass2" name="selClass2" style="width: 150px;">
+          <option value="#">끝 달</option>
+          <option value="2016-01-01">2016-01-01</option>
+          <option value="2016-02-01">2016-02-01</option>
+          <option value="2016-03-01">2016-03-01</option>
+          <option value="2016-04-01">2016-04-01</option>
+          <option value="2016-05-01">2016-05-01</option>
+          <option value="2016-06-01">2016-06-01</option>
+          <option value="2016-07-01">2016-07-01</option>
+          <option value="2016-08-01">2016-08-01</option>
+          <option value="2016-09-01">2016-09-01</option>
+          <option value="2016-10-01">2016-10-01</option>
+          <option value="2016-11-01">2016-11-01</option>
+          <option value="2016-12-01">2016-12-01</option>
+          <option value="2017-01-01">2017-01-01</option>
+          <option value="2017-02-01">2017-02-01</option>
+          <option value="2017-03-01">2017-03-01</option>
+          <option value="2017-04-01">2017-04-01</option>
+          <option value="2017-05-01">2017-05-01</option>
+          <option value="2017-06-01">2017-06-01</option>
+          <option value="2017-07-01">2017-07-01</option>
+          <option value="2017-08-01">2017-08-01</option>
+          <option value="2017-09-01">2017-09-01</option>
+          <option value="2017-10-01">2017-10-01</option>
+          <option value="2017-11-01">2017-11-01</option>
+          <option value="2017-12-01">2017-12-01</option>
+          <option value="2018-01-01">2018-01-01</option>
+          <option value="2018-02-01">2018-02-01</option>
+          <option value="2018-03-01">2018-03-01</option>
+          <option value="2018-04-01">2018-04-01</option>
+          <option value="2018-05-01">2018-05-01</option>
+          <option value="2018-06-01">2018-06-01</option>
+          <option value="2018-07-01">2018-07-01</option>
+          <option value="2018-08-01">2018-08-01</option>
+          <option value="2018-09-01">2018-09-01</option>
+          <option value="2018-10-01">2018-10-01</option>
+          <option value="2018-11-01">2018-11-01</option>
+          <option value="2018-12-01">2018-12-01</option>
+          <option value="2019-01-01">2019-01-01</option>
+          <option value="2019-02-01">2019-02-01</option>
+          <option value="2019-03-01">2019-03-01</option>
+          <option value="2019-04-01">2019-04-01</option>
+          <option value="2019-05-01">2019-05-01</option>
+          <option value="2019-06-01">2019-06-01</option>
+          <option value="2019-07-01">2019-07-01</option>
+          <option value="2019-08-01">2019-08-01</option>
+          <option value="2019-09-01">2019-09-01</option>
+          <option value="2019-10-01">2019-10-01</option>
+          <option value="2019-11-01">2019-11-01</option>
+          <option value="2019-12-01">2019-12-01</option>
+          <option value="2020-01-01">2020-01-01</option>
+          <option value="2020-02-01">2020-02-01</option>
+          <option value="2020-03-01">2020-03-01</option>
+          <option value="2020-04-01">2020-04-01</option>
+        </select>
+        <select class = "form-control" id = "selClass3" name = "selClass3" style = "width: 150px;">
+          <option value="line">라인 차트</option>
+          <option value="bar">바 차트</option>
+          <option value="doughnut">도넛 차트</option>
+          <option value="pie">파이차트</option>
+          <option value="radar">레이더 차트</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-sm-4 text-left"><input required="required" type="text" class="form-control" id="txtColname"
+        name="txtColname" placeholder="키워드 검색" name="txtColname">
+    </div>
+    <div class="col-sm-4 text-left"><button type="button" class="btn btn-primary"
+        onclick="doAjax(this.form,'selClass','selClass2', 'txtColname')">검색</button>
+    </div>
+
+  </div>
+</form>
+
+<div class="row p-1 text-center">
+  <div class="col-sm-12 text-center">
+    <br />
+    <h3>- 조회목록 - </h3>
+    <h2>평균 값<p id="result">0</p></h2>
+    <h2>최고치 기간<p id="most">20XX-XX-XX</p></h2>
+    <div class="container">
+      <div class="container">
+        <div class="row my-3">
+          <div class="col">
+            <h4>트렌드 수치화 그래프</h4>
+          </div>
+        </div>
+        <div class="row my-2">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <canvas id="myChart" height="200" width="500"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col">
+      <h4>트렌드 테이블</h4>
+    </div>
+    <table class="table table-striped ">
+      <thead>
+        <tr>
+          <th>기간(달 단위)</th>
+          <th>트렌드 백분율</th>
+        </tr>
+      </thead>
+      <tbody id="tbos">
+
+      </tbody>
+    </table>
+  </div>
+</div>
+<script>
+  // 셀렉트 선택시 kClass변수에 드롭다운값을 할당
+  kClass_v = null;
+
+  // 검색버튼을 누루면 내용을 서버에 전송
+  function doAjax(pFrm, kClass, kClass2, txtColname) {
+    alert($('#selClass').val());
+    alert($('#selClass2').val());
+    alert($('#txtColname').val());
+    alert($('#selClass3').val());
+
+    $.ajax({
+      url: "http://192.168.0.71:8000/fapp/message2/",
+      type: "GET",
+      data: {
+        'selClass': $('#selClass').val(),
+        'selClass2': $('#selClass2').val(),
+        'selClass3': $('#selClass3').val(),
+        'txtColname': $('#txtColname').val(),
+      },
+      dataType: 'json',
+      contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+      dataType: "text",
+
+
+      success: function (data) {
+        // 데이터 청결화
+        for (i = 0; i < data.length; i++) {
+          data = data.replace("[", '').replace("[", '').replace(" ", '').replace("]", '').replace("]", '').replace("}", '').replace(/{/gi, '').replace("}", '')
+            .replace("startDate", '').replace("\"", '').replace(/:/gi, '').replace("endDate", '').replace("timeUnit", '').replace("month", '').replace("results", '')
+            .replace("title", '').replace("keywords", '').replace("data", '').replace(/period/gi, '').replace(/ratio/gi, '').replace(/\"/gi, "");
+        }
+        data = data.split(',');
+        tbos = $("#tbos");
+        $("#tbos tr").remove();
+
+        for (i = 6; i < data.length; i = i + 2) {
+          tbos.append("<tr><td>" + data[i] + "</td><td>" + data[i + 1] + "</td></tr>");
+          // alert(data[i]);alert(data[i+1]);
+        }
+
+        var row = new Array(); //배열선언
+        for (i = 6; i < data.length; i = i + 2) {
+          row.push(data[i]);
+          }
+
+        var data2 = new Array(); //배열선언
+        for (i = 6; i < data.length; i = i + 2) {
+          data2.push(data[i + 1]);
+          }
+
+        var sum = 0; // 평균값
+        for(i = 0; i < data.length; i++) {
+          sum += parseFloat(data2[i]);
+          var result = sum / data2.length;
+        }
+        var str = document.getElementById("result");
+        str.innerHTML = result.toFixed(2);
+    
+        for(i = 0; i < data2.length; i++) {
+          if (data2[i] == 100) {
+            var most = row[i];
+          }
+        }
+        var mot = document.getElementById("most");
+        mot.innerHTML = most;
+
+        var color = new Array();
+        for (i = 1; i < 13; i++) {
+          color.push(
+            'rgba(255,99,132,1)',
+            'rgba(54,162,235,1)',
+            'rgba(255,206,86,1)',
+            'rgba(75,192,192,1)',
+            'rgba(153,102,255,1)',
+            'rgba(255,159,64,1)'
+          )
+
+          var backcolor = new Array();
+          for (i = 1; i < 13; i++) {
+            backcolor.push(
+            'rgba(255,99,132,1)',
+            'rgba(54,162,235,1)',
+            'rgba(255,206,86,1)',
+            'rgba(75,192,192,1)',
+            'rgba(153,102,255,1)',
+            'rgba(255,159,64,1)'
+          )
+          }
+        }
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+          // 챠트 종류를 선택
+          type: $('#selClass3').val(),
+
+          // 챠트를 그릴 데이타
+          data: {
+            labels: row,
+            datasets: [{
+              label: 'My First dataset',
+              backgroundColor: color,
+              borderColor: backcolor,
+              data: data2
+            }]
+          },
+          // 옵션
+          options: {
+            legend: {
+              display: false
+            },
+            title: {
+              display: true,
+              text: $('#txtColname').val() + ' 키워드 트렌드 차트'
+            }
+          }
+
+        });
+
+
+      }
+    });
+  }
+</script>
+<!-- 페이지 이동 -->
+<div class="row p-1 text-center">
+  <div class="col-sm-4 text-center"></div>
+  <div class="col-sm-4 text-center">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link"> | HERE | </a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </div>
+  <div class="col-sm-4 text-center"></div>
+  </form>
+  {% endblock %}
