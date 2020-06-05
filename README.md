@@ -5,4 +5,4 @@
 >   > 사용된 기술
 >   >   >  API: Naver DATALAB
 >   >   >  언어: Python, Javascript
-> ppt 다운로드 가능
+>>   >   >  ppt 다운로드 가능
